@@ -1,4 +1,1 @@
-# testproject
-Online Devtool Testing
-
-wow yay
+# An Android installer for yt-dl in Termux.
