@@ -30,8 +30,11 @@ then
     read y
     if [[ $y == "y" ]] 
     then
+        echo "Installing/updating Python (using apt)"
         apt -y install python
+        echo "Installing youtube-dl to /data/data/com.termux/files/usr/bin/youtube-dl (using curl)"
         curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /data/data/com.termux/files/usr/bin/youtube-dl
+        echo "Making youtube-dl executable (using chmod)"
         chmod a+rx /data/data/com.termux/files/usr/bin/youtube-dl
         echo "Install complete."
         exit
@@ -49,6 +52,7 @@ then
     read y
     if [[ $y == "y" ]] 
     then
+        echo "Removing youtube-dl (using rm)"
         rm -rf /data/data/com.termux/files/usr/bin/youtube-dl
         echo "Removal complete."
         echo 'Python is still installed. If you need to remove Python, please do so by running "apt remove python".'
