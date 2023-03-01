@@ -61,7 +61,7 @@ then
         echo "Installing/updating dependencies (using apt)"
         apt -y install python ffmpeg
         echo "Installing nyt-dlp to /data/data/com.termux/files/usr/bin/nyt-dlp (using curl)"
-        curl -L https://github.com/ytdl-patched/ytdl-patched/releases/latest/download/ytdl-patched -o /data/data/com.termux/files/usr/bin/nyt-dlp
+        curl -L https://github.com/ytdl-patched/yt-dlp/releases/latest/download/yt-dlp -o /data/data/com.termux/files/usr/bin/nyt-dlp
         echo "Making nyt-dlp executable (using chmod)"
         chmod a+rx /data/data/com.termux/files/usr/bin/nyt-dlp
         echo "Install complete."
