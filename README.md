@@ -2,7 +2,7 @@
 
 Termux doesn't have youtube-dl or yt-dlp in its package manager. As a result it has to be installed manually.
 
-This script automates the installation of it.
+This script automates the installation of it. It also allows the installation of the daily builds as a separate executable (nyt-dlp).
 
 To install/uninstall
 
